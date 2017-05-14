@@ -1,0 +1,5 @@
+c:\users\dell-pc\documents\visual studio 2015\Projects\2048\2048\obj\Debug\u2048.csprojResolveAssemblyReference.cache
+c:\users\dell-pc\documents\visual studio 2015\Projects\2048\2048\obj\Debug\u2048.Main.resources
+c:\users\dell-pc\documents\visual studio 2015\Projects\2048\2048\obj\Debug\_2048.Properties.Resources.resources
+c:\users\dell-pc\documents\visual studio 2015\Projects\2048\2048\obj\Debug\u2048.csproj.GenerateResource.Cache
+c:\users\dell-pc\documents\visual studio 2015\Projects\2048\2048\bin\Debug\2048.exe.config

@@ -76,7 +76,7 @@ namespace u2048
             oBitmap.Add(new Bitmap(@"images/18.png"));
 
             oButton.Add(new Button(18, 18, 125, 130, 0, true));  // -- LEFT BIG
-
+ 
             oButton.Add(new Button(161, 18, 100, 66, 1, false)); // -- SCORE
             oButton.Add(new Button(279, 18, 100, 66, 1, false)); // -- BEST
 
@@ -138,15 +138,15 @@ namespace u2048
                 oButton[i].Draw(g, oBitmap[oButton[i].getIMGID()]);
             }
 
-            DrawTextCenterXWS(g, "SCORE", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(235, 221, 208)), 211, 32);
+            DrawTextCenterXWS(g, "Оноо", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(235, 221, 208)), 211, 32);
             DrawTextCenterXWS(g, iScore.ToString(), fFontS, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.White), 211, 54);
-
-            DrawTextCenterXWS(g, "BEST", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(235, 221, 208)), 329, 32);
+            
+            DrawTextCenterXWS(g, "Шилдэг", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(235, 221, 208)), 329, 32);
             DrawTextCenterXWS(g, iBest.ToString(), fFontS, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.White), 329, 54);
 
-            DrawTextCenterWS(g, "NEW GAME", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(255, 241, 224)), 211, 115);
-            DrawTextCenterWS(g, "ABOUT", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(255, 241, 224)), 329, 115);
-
+            DrawTextCenterWS(g, "Шинээр эхлэх", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(255, 241, 224)), 211, 115);
+            DrawTextCenterWS(g, "Тухай", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(255, 241, 224)), 329, 115);
+            
             DrawTextCenterWS(g, "W", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), kTOP ? new SolidBrush(Color.FromArgb(247, 190, 48)) : new SolidBrush(Color.FromArgb(120, 110, 101)), 80, 46);
             DrawTextCenterWS(g, "S", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), kBOTTOM ? new SolidBrush(Color.FromArgb(247, 190, 48)) : new SolidBrush(Color.FromArgb(120, 110, 101)), 80, 119);
             DrawTextCenterWS(g, "A", fFontS2, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), kLEFT ? new SolidBrush(Color.FromArgb(247, 190, 48)) : new SolidBrush(Color.FromArgb(120, 110, 101)), 46, 83);
@@ -166,16 +166,16 @@ namespace u2048
                 }
             }
 
-            DrawTextCenterX(g, "www.LukaszJakowski.pl", fFontS2, new SolidBrush(Color.FromArgb(120, 110, 101)), 198, 552);
-            DrawTextCenterX(g, "08-04-2014", fFontS2, new SolidBrush(Color.FromArgb(120, 110, 101)), 198, 566);
+            DrawTextCenterX(g, "МХТС", fFontS2, new SolidBrush(Color.FromArgb(120, 110, 101)), 198, 552);
+            DrawTextCenterX(g, "08-04-2017", fFontS2, new SolidBrush(Color.FromArgb(120, 110, 101)), 198, 566);
         }
 
         public void GameOverDraw(Graphics g)
         {
             g.FillRectangle(new SolidBrush(Color.FromArgb(150, 251, 248, 239)), rRect);
 
-            DrawTextCenterXWS(g, "GAME OVER", fFontS, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(120, 110, 101)), 198, 250);
-            DrawTextCenterXWS(g, "SCORE: " + iScore.ToString(), fFontS, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(120, 110, 101)), 198, 282);
+            DrawTextCenterXWS(g, "Тоглоом дууслаа", fFontS, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(120, 110, 101)), 198, 250);
+            DrawTextCenterXWS(g, "Оноо: " + iScore.ToString(), fFontS, new SolidBrush(Color.FromArgb(64, 10, 10, 10)), new SolidBrush(Color.FromArgb(120, 110, 101)), 198, 282);
         }
 
         public void DrawAbout(Graphics g)
@@ -183,11 +183,11 @@ namespace u2048
             g.FillRectangle(new SolidBrush(Color.FromArgb(128, 255, 162, 89)), rRect);
 
             DrawTextCenterXWS(g, "2048 Puzzle Game - C#", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 210);
-            DrawTextCenterXWS(g, "Author: Łukasz Jakowski", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 250);
-            DrawTextCenterXWS(g, "Informatyka Inżynierska 2012-2016", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 290);
-            DrawTextCenterXWS(g, "Uniwersytet Śląski w Katowicach", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 310);
-            DrawTextCenterXWS(g, "www.LukaszJakowski.pl", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 350);
-            DrawTextCenterXWS(g, "08-04-2014", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 370);
+            DrawTextCenterXWS(g, "Биедаалт", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 250);
+            DrawTextCenterXWS(g, "2017 он", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 290);
+            DrawTextCenterXWS(g, "B140910375 баг", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 310);
+            DrawTextCenterXWS(g, "МХТС", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 350);
+            DrawTextCenterXWS(g, "Бүтээлт лаб", fFontS, new SolidBrush(Color.FromArgb(255, 10, 10, 10)), new SolidBrush(Color.White), 198, 370);
         }
 
         /* ******************************************** */
@@ -251,7 +251,7 @@ namespace u2048
                                         bAdd = true;
                                         break;
                                     }
-                                    else if (iBoard[i][j] != 0)
+                                    else if(iBoard[i][j] != 0)
                                     {
                                         break;
                                     }
@@ -470,9 +470,7 @@ namespace u2048
                     return 15;
                 case 2048:
                     return 16;
-                case 4096:
-                case 8192:
-                case 16384:
+                case 4096: case 8192: case 16384:
                     return 17;
             }
 
@@ -481,10 +479,8 @@ namespace u2048
 
         public void checkButton(int nXPos, int nYPos)
         {
-            for (int i = 0; i < oButton.Count; i++)
-            {
-                if (oButton[i].getClickable())
-                {
+            for(int i = 0; i < oButton.Count; i++) {
+                if(oButton[i].getClickable()) {
                     if (nXPos >= oButton[i].getXpos() && nXPos <= oButton[i].getXpos() + oButton[i].getWidth() && nYPos >= oButton[i].getYPos() && nYPos <= oButton[i].getYPos() + oButton[i].getHeight())
                     {
                         actionButton(i);
@@ -498,7 +494,7 @@ namespace u2048
             switch (iButtonID)
             {
                 case 0:
-
+                    
                     break;
                 case 3: // NEW GAME
                     resetGameData();

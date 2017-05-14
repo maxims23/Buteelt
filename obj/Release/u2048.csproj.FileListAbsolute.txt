@@ -1,0 +1,10 @@
+C:\Users\jakowskiuki\Desktop\u2048\u2048\bin\Release\u2048 - Lukasz Jakowski.exe.config
+C:\Users\Dell-PC\Documents\u2048\bin\Release\u2048 - Lukasz Jakowski.exe.config
+C:\Users\Dell-PC\Documents\u2048\bin\Release\u2048 - Lukasz Jakowski.exe
+C:\Users\Dell-PC\Documents\u2048\bin\Release\u2048 - Lukasz Jakowski.pdb
+C:\Users\Dell-PC\Documents\u2048\obj\Release\u2048.csprojResolveAssemblyReference.cache
+C:\Users\Dell-PC\Documents\u2048\obj\Release\u2048.Main.resources
+C:\Users\Dell-PC\Documents\u2048\obj\Release\u2048.Properties.Resources.resources
+C:\Users\Dell-PC\Documents\u2048\obj\Release\u2048.csproj.GenerateResource.Cache
+C:\Users\Dell-PC\Documents\u2048\obj\Release\u2048 - Lukasz Jakowski.exe
+C:\Users\Dell-PC\Documents\u2048\obj\Release\u2048 - Lukasz Jakowski.pdb

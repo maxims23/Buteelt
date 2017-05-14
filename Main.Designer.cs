@@ -45,12 +45,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(396, 600);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "u2048";
-            this.Text = "u2048 - www.LukaszJakowski.pl";
+            this.Name = "Main";
+            this.Text = "2048";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Main_MouseClick);
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -58,3 +59,4 @@
         private System.Windows.Forms.Timer timer1;
     }
 }
+

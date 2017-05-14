@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -30,17 +31,13 @@ namespace u2048
             CFG.getInstance();
         }
 
-        private void Main.InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
-
         /* ******************************************** */
 
         public void UpdateGame()
         {
             oGame.Update();
             /*CFG.getInstance().setTime(CFG.getInstance().getCurrentTime());
+
             if (CFG.getInstance().getTime() - 1000 >= lFPSTimer)
             {
                 lFPSTimer = CFG.getInstance().getCurrentTime();

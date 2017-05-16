@@ -36,7 +36,7 @@ namespace u2048
         public void UpdateGame()
         {
             oGame.Update();
-            /*CFG.getInstance().setTime(CFG.getInstance().getCurrentTime());
+            CFG.getInstance().setTime(CFG.getInstance().getCurrentTime());
 
             if (CFG.getInstance().getTime() - 1000 >= lFPSTimer)
             {
@@ -47,7 +47,7 @@ namespace u2048
             else
             {
                 ++nNumOfFPS;
-            }*/
+            }
         }
 
         public void Draw(Graphics g)

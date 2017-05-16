@@ -11,7 +11,7 @@ namespace u2048
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());//Main class ajillana 
+            Application.Run(new Main());
         }
     }
 }

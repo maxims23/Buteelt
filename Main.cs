@@ -12,8 +12,7 @@ namespace u2048
         private Graphics gGraphics, gG;
         private Bitmap bBackground;
 
-        //private long lFPSTimer = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-        //private int iNumOfFPS, nNumOfFPS;
+// ene hesegt main function bgaa
 
         public Main()
         {
